@@ -1,0 +1,149 @@
+/* Module 1 Task 1 */
+
+/* Animation main menu */
+
+.page-header__menu li a::after
+{
+    display: block;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.page-header__menu li a:hover:after,
+.page-header__menu li a:focus:after
+{
+    display: block;
+    width: 100%;
+}
+
+/* Animation social icon */
+
+.social-block__list
+{
+opacity: 0;
+  -webkit-transform: translateY(50px);
+transform: translateY(50px);
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  transition: opacity 1s, transform 1s;
+  transition: opacity 1s, transform 1s;
+}
+
+
+
+/* Animation social icon */
+
+.intro__message p
+{
+    animation: 0.8s ease-out 0s 1 slideInFromBottom;
+    
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* Animation social icon */
+
+.social-block__list li {
+  opacity: 0;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+  transition: opacity 0.8s, transform 0.8s;
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.social-block:hover .social-block__list li {
+  opacity: 1;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+.social-block:hover .social-block__list li:nth-child(1)
+{
+    transition-delay: 0s;
+}
+
+.social-block:hover .social-block__list li:nth-child(2)
+{
+    transition-delay: 0.2s;
+}
+
+.social-block:hover .social-block__list li:nth-child(3)
+{
+    transition-delay: 0.35s;
+}
+
+/* Animation social icon */
+
+.swiper-slide .slider__item-text
+{
+    transition-delay: 0s;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    
+}
+
+.swiper-slide-active .slider__item-text
+{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.swiper-slide-next .slider__item-text
+{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+    transition-delay: 0.2s;
+}
+
+.swiper-slide-prev .slider__item-text
+{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(0px);
+}
+
+
+.form
+{
+    justify-content: flex-end;
+}
+.form__field
+{
+    width: 50px;
+    -moz-animation: expandwidth 0.8s forwards;
+    -webkit-animation: expandwidth 0.8s  forwards;
+    animation: expandwidth 0.8s forwards;
+    
+}
+
+@-webkit-keyframes expandwidth {
+    100% {
+        width: 80%;
+    }
+}
+@-moz-keyframes expandwidth {
+    100% {
+        width: 80%;
+    }
+}
+@keyframes expandwidth {
+    100% {
+        width: 80%;
+    }
+}
