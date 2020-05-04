@@ -1,0 +1,39 @@
+/* Module 1 Task 1 */
+
+/* Animation main menu */
+
+.page-header__menu li a::after
+{
+    display: block;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.page-header__menu li a:hover:after,
+.page-header__menu li a:focus:after
+{
+    display: block;
+    width: 100%;
+}
+
+/* Animation social icon */
+
+
+/* Animation social icon */
+
+.intro__message p
+{
+    animation: 1s ease-out 0s 1 slideInFromBottom;
+    
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
