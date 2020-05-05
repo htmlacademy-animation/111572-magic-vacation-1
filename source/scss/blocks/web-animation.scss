@@ -220,3 +220,31 @@ body.load .screen__footer
     transform: translateY(0%);
   }
 }
+
+/* Module 1 Task 3 */
+
+.screen__background-hidden
+{
+    position: relative;
+    background-color: $c-dark;
+    z-index:2;
+}
+
+.screen--prizes.active ~ .screen__background-hidden {
+  animation-duration: 1s;
+  animation-name: backgroundChange;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-out;
+}
+ 
+@keyframes backgroundChange {
+  from {
+    height: 0;
+    transform: translateY(0);
+  }
+  to {
+    height: 100vh;
+    transform: translateY(-100%);
+  }
+}
+
